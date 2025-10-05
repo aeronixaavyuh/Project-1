@@ -1,0 +1,204 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* body style  */
+body {
+    background-color: white;
+  color: black;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* universal button  */
+button {
+  display: inline-block;
+  padding: 8px 20px;
+  margin: 15px 15px 25px 0px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  width: max-content;
+  font-family: inherit;
+  border: 1px solid white;
+  border-radius:20px;
+  /* background: linear-gradient(90deg, #f59e42, #f43f5e); */
+  background: linear-gradient(135deg, #2563eb 40%, #06b6d4 100%);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover,
+button:focus {
+  background: linear-gradient(135deg, #3674fa 40%, #3ee2ff 100%);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.575);
+ transition: background 0.1s, box-shadow 0.1s;
+
+}
+
+
+/* box style  */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  min-width: 300px;
+  max-width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  padding: 25px;
+  background: linear-gradient(135deg, #fae0e0 40%, #a3fa75 100%);
+}
+.contact-sec {
+  min-width: 300px;
+  max-width: 450px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  font-size: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.form-card {
+  background: linear-gradient(90deg, #e0f7fa 40%, #f3e8ff 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(59, 131, 246, 0.5);
+   min-width: 300px;
+  max-width: 450px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  border: 1px solid #443f53;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9eacf4;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input:hover {  
+  border: 1px solid #002aff;
+  box-shadow: 0px 0px 3px #002aff;
+}
+strong {
+  font-size: 22px;
+}
+
+/* Project 3: Simple Login Simulatore */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 5px;
+  background: 1px solid black;
+}
+
+.social-icons a {
+  font-size: 20px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  transition: all 0.3s ease-in;
+}
+
+.social-icons a:hover {
+  background-color: #f3f3f3;
+}
+.social-icons a:hover {
+  box-shadow: 0px 0px 10px rgb(173, 173, 173);
+}
+
+.logIn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  height: max-content;
+  border: 1px solid #443f53;
+  background: linear-gradient(90deg, #e0f7fa 60%, #f3e8ff 100%);
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(59, 131, 246, 0.5);
+  transition: all 0.6s ease-in-out;
+}
+.signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 13px;
+  min-width: 320px;
+  max-width: 400px;
+  height: 500px;
+  font-size: 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: white;
+  background: linear-gradient(135deg, #2563eb 40%, #06b6d4 100%);
+}
+.signUp-Right {
+  border-radius: 13px;
+  min-width: 320px;
+  max-width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  color: rgb(0, 0, 0);
+  background-color: white;
+} 
+/* baloon  */
+#balloonArea {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+}
+
+.balloon {
+  position: absolute;
+  bottom: 0;
+  animation: floatUp 5s ease-in forwards;
+  font-size: 80px;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+}
+

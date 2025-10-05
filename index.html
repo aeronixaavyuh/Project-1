@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link rel="stylesheet" href="style1.css" />
+    <script src="script1.js"></script> 
+  </head>
+  <body>
+    <!--Project 1: Check Age Category -->
+    <section class="contact-section">
+   <h2>Indian Standard Time Clock  >> &nbsp;
+   </h2>
+     <div id="clock" style="font-size: 2rem; font-family: monospace;"></div>
+
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 1: Age Checker</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> User se age lo, aur batao wo child hai, adult
+          hai ya senior citizen.
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Check Age Category</h2>
+        <input type="number" id="ageInput" placeholder="Enter your age" />
+        <button onclick="checkAge()">Check</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="result"></p>
+      </div>
+    </section>
+
+    <!-- Project 2: Find Day from Number -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 2: Day of the Week Finder</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> User se number lo (1–7), aur uska matching day
+          batao using switch.
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Find Day from Number</h2>
+        <input type="number" id="dayInput" placeholder="Enter number (1-7)" />
+        <button onclick="findDay()">Find Day</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="output"></p>
+      </div>
+    </section>
+
+    <!-- Project 3: Simple Login Simulatore -->
+    <section class="contact-section">
+      <div class="logIn-container">
+        <div class="signUp">
+          <h2 style="font-size: 35px">Welcome Back!</h2>
+          <br /><br />
+          <p style="text-align: center;">
+            To keep connected with us please login with your personal info
+          </p><br>
+           <button onclick="signIn()">Sign In</button>
+
+        </div>
+        <div class="signUp-Right">
+          <form >
+          <h1 style="font-size: 35px">Create Account</h1><br>
+        <div class="social-icons">
+				<a href="#" ><img src="facebook.svg" alt="linkedin" height="30px" width="30px"></i></a>
+				<a href="#" ><img src="google.svg" alt="linkedin" height="30px" width="30px"></a>
+				<a href="#" ><img src="linkedin-in-brands.svg" alt="linkedin"  height="30px" width="30px" ></a>
+			</div>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="User Name"
+          /> 
+          <input
+            type="password"
+            id="ConfirmUserPass"
+            placeholder="Confirm your password"
+          />
+          <button  onclick="signIn()">Sign Up</button>
+          <!-- <p>Passwords don’t match.</p> -->
+          <p id="output"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+     <!--Project 4: Check Age Category -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 4: Traffic Light Guide</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> User se color input lo: "red", "yellow", "green"
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Traffic Light Guide</h2><br>
+                <p>Choose any one color from Red, Green and Yellow and write it down and understand the meaning of traffic color. </p><br>
+        <input type="text" id="trafficLight" placeholder="Enter Traffic Color and take guide." />
+        <button onclick="trafficLight()">Check</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="trafficOutput"></p>
+      </div>
+    </section>
+      <!--Project 5: Calculator (2 Numbers, 1 Operator) -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 5: Calculator (2 Numbers, 1 Operator)</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> User se 2 number aur 1 operator lo: +, -, *, /.
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Calculator</h2><br>
+          <label for="text">First Number</label>    
+        <input type="text" id="frtNum" placeholder="Enter First Number." />
+        <label for="text">You can use any 1 Operator( +, -, *, /).</label>
+        <input type="text" id="Operator" placeholder="Enter you Operator"  required/> 
+      <label for="text">Second Number</label>  
+        <input type="text" id="secNum" placeholder="Enter Second Number" />
+        <button onclick="calculate()">Check</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="calc"></p>
+      </div>
+    </section>
+  <!--Project 6: Movie Ticket Price Checker -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 6 : Movie Ticket Price Checker</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> User se age lo aur uske ticket ka prize batao.
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Movie Ticket Price Checker</h2><br>
+          <label for="number">Write down you Age and check movie ticket prize.</label>    
+        <input type="number" id="Age" placeholder="Enter First Number." />
+        
+        <button onclick="muvieTicket()">Check</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="ticketPrize"></p>
+      </div>
+    </section> 
+     <!--Project 7: Body Mass Index (BMI) Calculator -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 7: Body Mass Index (BMI) Calculator</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> BMI (Body Mass Index) calculate karta hai height aur weight ke basis par ki aap healthy ho ya nahi.
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Calculator</h2><br>
+           
+          <label for="number">Enter height in centimeter.</label>
+        <input type="number" id="cmInHeight" placeholder="Enter height in centimeter." />
+        <label for="number">Enter weight in kilogram.</label>
+        <input type="number" id="kgInWeight" placeholder="Enter weight in kilogram." />
+        
+        <button onclick="bodyMassIndex()">Check</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="bMI"></p>
+      </div>
+    </section>
+
+      <!--Project 8: Electricity Bill Generator -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 8: Electricity Bill Generator</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> Electricity Bill Generate karna
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Calculator</h2><br>
+           
+          <label for="number">Enter consumed units.</label>
+        <input type="number" id="unitsInput" placeholder="Enter consumed units" />
+        <button onclick="calculateBill()">Check</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="totalAmount"></p>
+      </div>
+    </section>
+
+       <!--Project 9: Simple Quiz App -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 9: Simple Quiz App</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> Simple Quiz App (1 Question at a Time)
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>What is the capital of India?</h2><br>
+           
+        <label><input style="width:10px; margin: 10px;" type="radio" name="answer" value="a"> Mumbai</label><br>
+        <label><input style="width:10px; margin: 10px;" type="radio" name="answer" value="b"> Delhi</label><br>
+        <label><input style="width:10px; margin: 10px;" type="radio" name="answer" value="c"> Kolkata</label><br>
+        <label><input style="width:10px; margin: 10px;"  type="radio" name="answer" value="d"> Bangalore</label><br><br>
+
+<button onclick="checkAnswer()">Submit</button>
+        <p><strong>Result:</strong></p>
+        <br />
+<p id="result2"></p>
+      </div>      
+    </section>
+<!--Project 10: Leap Year Checker -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 10: Leap Year Checker</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> Leap Year Check karna hai ya nahi.
+        </p>
+      </div>
+   <div class="form-card">       
+      <div id="loginSection">
+       <h2>Login</h2>
+       <input type="text" id="username" placeholder="Enter username"><br><br>
+       <input type="password" id="password" placeholder="Enter password"><br><br>
+        <p id="result4"></p>
+       <button onclick="login()">Login</button>
+
+     </div>
+     <div id="leapSection" style="display:none;">
+      <h2>Leap Year Checker</h2>
+      <input type="number" id="yearInput" placeholder="Enter year"><br><br>
+      <button onclick="checkLeapYear()">Check</button>
+      <p id="result3"></p>
+     </div>
+   </div>  
+  </section>
+ <!--Project 11: Loan Eligibility Checker -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 11: Loan Eligibility Checker</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> Loan Eligibility Check karna
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Loan Eligibility Check</h2><br>
+           
+          <label for="number">Enter your salary.</label>
+        <input type="number" id="jobSalary" placeholder="Enter your salary" />
+        <label for="number">Enter your age.</label>
+        <input type="number" id="agePerSon" placeholder="Enter your age." />
+         <label for="text">Enter your job type 'Paramanent' or 'other'.</label>
+        <input type="text" id="jobType" placeholder="Enter your job type 'Paramannt' or 'other'." />
+        <button onclick="loanEligibility()">Check</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="userOutput"></p>
+      </div>
+    </section>
+   <!--Project 12: Bill Splitter App -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 12: Bill Splitter App</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> Bill Splitter App
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>Bill Splitter App</h2><br>
+           
+          <label for="number">Enter total bill.</label>
+        <input type="number" id="totalBill" placeholder="Enter your salary" />
+        <label for="number">Enter number of people.</label>
+        <input type="number" id="numOfPeople" placeholder="Enter your age." />
+         <label for="number">Enter Tip percentage(%):</label>
+        <input type="number" id="uSertip" placeholder="Enter Tip percentage(optional)." />
+        <button onclick="billsplitter()">Check</button>
+        <p><strong>Result:</strong></p>
+        <br />
+        <p id="billOutput"></p>
+      </div>
+    </section>
+     <!--Project 13: Guess the Number Game -->
+    <section class="contact-section" id="balloonArea">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 13: Guess the Number Game</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> Guess the Number Game
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>🎲 Guess the Number (1–100)</h2><br>     
+        
+       <input type="number" id="userInput" placeholder="Enter your guess" />
+        <button onclick="checkGuess()">Submit</button>
+        <p><strong>Result:</strong></p>
+        <br />
+       <p id="reSult"></p>
+       <p id="hint"></p>
+      </div>
+    </section>
+     <!--Project 14: Marks to Grade Converter -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 14: Marks to Grade Converter</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong>Marks to Grade Converter
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>🎲 Marks to Grade Converter</h2><br>     
+        <label for=""> Enter your marks between 0 to 100 :</label>
+       <input type="number" id="userMarks" placeholder="Enter your marks" />
+        <button onclick="checkGrade()">Submit</button>
+        <p><strong>Result:</strong></p>
+        <br />
+       <p id="resUlt"></p>
+      </div>
+    </section>
+     <!--Project 15: Days in Month Finder -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 15: Days in Month Finder</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong>Days in Month Finder
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>🎲 Days in Month Finder</h2><br>     
+        <label for=""> Enter month number(1-12) :</label>
+       <input type="number" id="monthNum" placeholder="Enter month number(1-12)" />
+       <label for=""> Enter year :</label>
+       <input type="number" id="yearNum" placeholder="Enter your year" />
+        <button onclick="dayFinder()">Submit</button>
+        <p><strong>Result:</strong></p>
+        <br />
+       <p id="resuLt"></p>
+      </div>
+    </section>
+     <!--Project 16: Character Type Checker -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 16: Character Type Checker</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong>Character Type Checker
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>🎲 Character Type Checker</h2><br>     
+        <label > Enter any one charcter(A-Z, a-z, 0-1 and special symbols) :</label>
+       <input type="text" id="charInput" maxlength="1" placeholder="Enter any one charcter(A-Z, a-z, 0-1 and special symbols)" />
+      <button onclick="charType()">Submit</button>
+        <p><strong>Result:</strong></p>
+        <br />
+       <p id="charResult"></p>
+      </div>
+    </section>
+      <!--Project 17: Currency Converter (INR to USD, EUR, JPY) -->
+    <section class="contact-section">
+      <div class="contact-sec">
+        <h2 style="font-size: 35px">Project 17: Currency Converter (INR to USD, EUR, JPY)</h2>
+        <br /><br />
+        <p>
+          <strong>Goal:</strong> Currency Converter (INR to USD, EUR, JPY)
+        </p>
+      </div>
+      <div class="form-card">
+        <h2>🎲 Currency Converter</h2><br> 
+        <label > Enter INR Amount:</label>
+<input type="number" id="inrInput" placeholder="Enter amount in INR">
+<select id="currencySelect" style="width: fit-content; padding: 10px; border-radius: 5px; box-shadow: 0px 0px 3px blue; background-color: rgb(225, 225, 225);">
+  <option value="">-- Select Currency --</option>
+  <option value="USD">USD - United States</option>
+  <option value="EUR">EUR - Europe</option>
+  <option value="JPY">JPY - Japan</option>
+  <option value="GBP">GBP - United Kingdom</option>
+  <option value="AUD">AUD - Australia</option>
+  <option value="CAD">CAD - Canada</option>
+</select>
+<button onclick="convertCurrency()">Convert</button>
+<p id="ouTput"></p>
+      </div>s
+    </section>
+     
+    
+  </body>
+</html>
